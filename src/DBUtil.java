@@ -116,7 +116,7 @@ public class DBUtil {
             e.printStackTrace();
         }
 
-        return false;k
+        return false;
     }
 
     public boolean validateCredentialsNew(String username, String password) {
