@@ -6,6 +6,18 @@ public class Emp {
     private int deptNo;
     private int sal;
     private String location;
+    private String imagePath;
+
+    public Emp(int id, String name, String dob, int mgr, int deptNo, int sal, String location, String imagePath) {
+        this.id = id;
+        this.name = name;
+        this.dob = dob;
+        this.mgr = mgr;
+        this.deptNo = deptNo;
+        this.sal = sal;
+        this.location = location;
+        this.imagePath = imagePath;
+    }
 
     public Emp(int id, String name, String dob, int mgr, int deptNo, int sal, String location) {
         this.id = id;
@@ -15,6 +27,7 @@ public class Emp {
         this.deptNo = deptNo;
         this.sal = sal;
         this.location = location;
+        imagePath = null;
     }
 
     @Override
@@ -27,6 +40,7 @@ public class Emp {
                 ", deptNo=" + deptNo +
                 ", sal=" + sal +
                 ", location='" + location + '\'' +
+                ", imagePath='" + imagePath + '\'' +
                 '}';
     }
 

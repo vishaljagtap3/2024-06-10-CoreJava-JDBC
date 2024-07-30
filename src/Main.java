@@ -52,12 +52,32 @@ public class Main {
                 System.out.println(emp);
             }*/
 
-            Scanner scanner = new Scanner(System.in);
+            /*Scanner scanner = new Scanner(System.in);
             String username = scanner.nextLine();
             String password = scanner.nextLine();
 
             boolean isLoggedIn = dbUtil.validateCredentialsNew(username, password);
-            System.out.println("Is logged in: " + isLoggedIn);
+            System.out.println("Is logged in: " + isLoggedIn);*/
+
+            /*dbUtil.addEmpWithImage(
+                    459091,
+                    "The New Emp No1",
+                    "1998-05-09",
+                    456,
+                    30,
+                    3400,
+                    "Pune, India",
+                    "/home/vishal/Pictures/bitcode/digital.png"
+            );
+
+            for(Emp e: dbUtil.getEmpsWithImages()) {
+                System.out.println(e);
+                System.out.println();
+            }*/
+
+            dbUtil.callableDemo(10);
+
+
 
             dbUtil.close();
         } catch (SQLException e) {
